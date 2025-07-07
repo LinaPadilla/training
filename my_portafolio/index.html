@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header has my name and inside is the nav to navigate between the options -->
+    <header>
+        <h1>Lina Padilla Caballero - Riwi Coder</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#aboutMe"> About Me </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#contact"> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Start main -->
+    <main>
+        <!-- Section about me, it has a short description of who I am and my skills. -->
+        <section id="aboutMe">
+            <h2>About Me</h2>
+
+            <div class="container-aboutme">
+                <div class="img-aboutme">
+                    <img src="foto.jpeg" alt="Lina Padilla Photo">
+                </div>
+
+                <div class="content-aboutme">
+                    <p>
+                    My name is Lina Padilla, and I am passionate about innovation, design, and programming. I enjoy exploring creative solutions and leveraging technology to build impactful projects.
+                    </p>
+
+                    <h3>Skills</h3>
+                    <ul class="menu-list">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project section, contains an image and description of a project. Also includes a table with a list of projects. -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="container-projects">
+                <div class="cards-projects">
+                    <p>I developed a transportation model using Python, HTML, and JavaScript that allows users to input supply and demand data. The application calculates the minimum transportation cost using the Northwest method, providing an efficient solution for optimizing logistics and distribution problems.</p>
+
+                    <img src="model_transport.jpg" alt="Project Portafolio Image">
+                </div>
+
+                <div class="table-projects">
+                    <table>
+                        <tr>
+                            <th>Projects Name</th>
+                            <th>Tecnologies used</th>
+                            <th>Link</th>
+                        </tr>
+                        <tr>
+                            <th>Model Transport</th>
+                            <th>Python, Html and Js</th>
+                            <th><a href="#"> Link</a></th>
+                        </tr>
+                        <tr>
+                            <th>Inventario</th>
+                            <th>Python</th>
+                            <th><a href="#"> Link</a></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section, contains a simple user information form. -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="container-contact">
+                <label for="name" id="names"> Name </label>
+                <input type="text" name="nombre" id="name" placeholder="Escribe tu nombre" required>
+
+                <label for="email" id="emails"> Email </label>
+                <input type="text" name="email" id="email" placeholder="Escribe tu email" required >
+
+                <label for="message"> Message </label>
+                <textarea name="message" id="message"> </textarea>
+                <input class="container-contactsubmit" type="submit" value=" Enviar ">
+            </div>
+        </section>
+    </main>
+    <!-- Final part of the portfolio, contains information about a social media account. -->
+    <footer>
+        <p>Social Media</p>
+        <a href="https://github.com/LinaPadilla">GitHub</a>
+    </footer>
+</body>
+</html>
